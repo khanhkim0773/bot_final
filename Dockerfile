@@ -7,8 +7,8 @@ COPY . /app
 # Đặt thư mục làm việc là /app
 WORKDIR /app
 
-# Chạy lệnh train nếu cần
-
+# Thiết lập quyền truy cập
+RUN chmod -R 755 /app
 
 # Chạy Rasa server khi khởi động container
-CMD ["rasa", "run", "--enable-api", "--cors", "*"]
+CMD ["run", "--enable-api", "--cors", "*", "--port", "$PORT", "--host", "0.0.0.0"]
