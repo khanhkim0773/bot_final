@@ -7,8 +7,8 @@ COPY . /app
 # Đặt thư mục làm việc là /app
 WORKDIR /app
 
-# Ghi đè ENTRYPOINT để tránh xung đột với lệnh 'rasa'
-ENTRYPOINT []
+# Ghi đè ENTRYPOINT để tránh nhầm lẫn với lệnh 'rasa'
+ENTRYPOINT [""]
 
-# Chạy Rasa server khi khởi động container
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "5005"]
+# Chạy Rasa server khi khởi động container với lệnh CMD đơn giản
+CMD rasa run --enable-api --cors "*" --host "0.0.0.0" --port 5005
