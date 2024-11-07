@@ -1,0 +1,3 @@
+rasa==3.5.17       # Phiên bản phù hợp với dự án của bạn, có thể thay đổi nếu cần
+rasa-sdk==3.5.1    # Phiên bản của Rasa SDK phù hợp
+PyYAML==6.0.1       # Dùng cho việc xử lý file YAML
