@@ -1,3 +1,0 @@
-rasa train
-rasa run actions
-rasa run --debug --enable-api --cors '*'
