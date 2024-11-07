@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_timer\"}}]": "utter_timer_set",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"set_timer\"}}, {\"prev_action\": {\"action_name\": \"utter_timer_set\"}, \"user\": {\"intent\": \"set_timer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adjust_temperature\"}}]": "utter_temperature_adjusted",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adjust_temperature\"}}, {\"prev_action\": {\"action_name\": \"utter_temperature_adjusted\"}, \"user\": {\"intent\": \"adjust_temperature\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"close_curtains\"}}]": "utter_curtains_closed",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"close_curtains\"}}, {\"prev_action\": {\"action_name\": \"utter_curtains_closed\"}, \"user\": {\"intent\": \"close_curtains\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_status\"}}]": "action_check_status",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_status\"}}, {\"prev_action\": {\"action_name\": \"action_check_status\"}, \"user\": {\"intent\": \"check_status\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"turn_off_device\"}}]": "action_toggle_device",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"turn_off_device\"}}, {\"prev_action\": {\"action_name\": \"action_toggle_device\"}, \"user\": {\"intent\": \"turn_off_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stop_music\"}}]": "utter_music_stopped",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stop_music\"}}, {\"prev_action\": {\"action_name\": \"utter_music_stopped\"}, \"user\": {\"intent\": \"stop_music\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"turn_on_device\"}}]": "action_toggle_device",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"turn_on_device\"}}, {\"prev_action\": {\"action_name\": \"action_toggle_device\"}, \"user\": {\"intent\": \"turn_on_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"schedule_device\"}}]": "utter_device_scheduled",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"schedule_device\"}}, {\"prev_action\": {\"action_name\": \"utter_device_scheduled\"}, \"user\": {\"intent\": \"schedule_device\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"play_music\"}}]": "utter_music_playing",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"play_music\"}}, {\"prev_action\": {\"action_name\": \"utter_music_playing\"}, \"user\": {\"intent\": \"play_music\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adjust_brightness\"}}]": "utter_brightness_adjusted",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adjust_brightness\"}}, {\"prev_action\": {\"action_name\": \"utter_brightness_adjusted\"}, \"user\": {\"intent\": \"adjust_brightness\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"open_curtains\"}}]": "utter_curtains_opened",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"open_curtains\"}}, {\"prev_action\": {\"action_name\": \"utter_curtains_opened\"}, \"user\": {\"intent\": \"open_curtains\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start"
+    ]
+  }
+}
