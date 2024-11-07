@@ -8,7 +8,7 @@ COPY . /app
 WORKDIR /app
 
 # Chạy lệnh train nếu cần
-RUN rasa train
+
 
 # Chạy Rasa server khi khởi động container
 CMD ["rasa", "run", "--enable-api", "--cors", "*"]
