@@ -8,4 +8,4 @@ COPY . /app
 WORKDIR /app
 
 # Chạy Rasa server khi khởi động container
-CMD ["run", "--enable-api", "--cors", "*", "--host", "0.0.0.0"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0"]
