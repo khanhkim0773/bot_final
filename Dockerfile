@@ -7,6 +7,5 @@ COPY . /app
 # Đặt thư mục làm việc là /app
 WORKDIR /app
 
-# Ghi đè ENTRYPOINT và CMD
-ENTRYPOINT ["rasa"]
-CMD ["run", "--enable-api", "--cors", "*", "--host", "0.0.0.0"]
+# Chạy Rasa server khi khởi động container
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "5005"]
