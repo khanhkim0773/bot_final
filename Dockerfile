@@ -1,5 +1,5 @@
 # Sử dụng image của Rasa
-FROM rasa/rasa:3.5.17 -full
+FROM rasa/rasa:3.5.17-full
 
 # Sao chép tất cả các files trong project vào container
 COPY . /app
@@ -11,4 +11,4 @@ WORKDIR /app
 RUN rasa train
 
 # Chạy Rasa server khi khởi động container
-CMD ["run", "--enable-api", "--cors", "*"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*"]
